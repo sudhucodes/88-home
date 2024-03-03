@@ -153,3 +153,7 @@ section {
     height: 120px;
     border-radius: 10px;
 }
+
+a{
+    text-decoration: none;
+}
