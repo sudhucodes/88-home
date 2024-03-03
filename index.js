@@ -20,52 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    var homeBtnDiv = document.querySelector('.homebtndiv');
-    var activityBtnDiv = document.querySelector('.activitybtndiv');
-    var promotionBtnDiv = document.querySelector('.promotionbtndiv');
-    var walletBtnDiv = document.querySelector('.walletbtndiv');
-    var accountBtnDiv = document.querySelector('.accountbtndiv');
 
-    homeBtnDiv.addEventListener('click', function () {
-        // Add your Home button click functionality here
-        console.log('Home button clicked');
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the elements
+    var accountBtn = document.querySelector('.accountbtndiv');
 
-    activityBtnDiv.addEventListener('click', function () {
-        // Add your Activity button click functionality here
-        console.log('Activity button clicked');
-    });
-
-    promotionBtnDiv.addEventListener('click', function () {
-        // Add your Promotion button click functionality here
-        console.log('Promotion button clicked');
-    });
-
-    walletBtnDiv.addEventListener('click', function () {
-        // Add your Wallet button click functionality here
-        console.log('Wallet button clicked');
-    });
-
-    accountBtnDiv.addEventListener('click', function () {
-        // Add your Account button click functionality here
-        console.log('Account button clicked');
+    // Add click event listener to the div with class "accountbtndiv"
+    accountBtn.addEventListener('click', function(event) {
+        // Prevent the default behavior of the anchor tag
+        event.preventDefault();
+        
+        // Redirect to the specified link
+        window.location.href = 'https://sudhucodes.github.io/profile/';
     });
 });
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    var accountBtn = document.getElementById('accountBtn');
-
-    accountBtn.addEventListener('click', function () {
-        // Redirect to the user profile page
-        window.location.href = '../Profile/profile.html';
-    });
-});
-
-
-function wingo() {
-    window.location.href = '../Wingo home/index.html'; 
-}
