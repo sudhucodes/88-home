@@ -34,3 +34,17 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'https://sudhucodes.github.io/profile/';
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the elements
+    var accountBtn = document.querySelector('.lottery');
+
+    // Add click event listener to the div with class "accountbtndiv"
+    accountBtn.addEventListener('click', function(event) {
+        // Prevent the default behavior of the anchor tag
+        event.preventDefault();
+        
+        // Redirect to the specified link
+        window.location.href = 'https://sudhucodes.github.io/wingo/';
+    });
+});
